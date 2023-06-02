@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;   
+}
+:root{
+    --cor-de-fundo:#643843;
+    --cor-texto:white;
+    --fonte-texto:'Merienda', cursive;
+    --cor-fundo-rodape:#E7CBCB;
+    --cor-texto-rodape:#643843;
+}
+body{
+    background-color:var(--cor-de-fundo);
+    font-family: var(--fonte-texto);
+    color:var(--cor-texto);
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+.cabecalho__menu{
+    display:flex;
+    flex-direction: column;
+    gap:3px;
+
+}
+.cabecalho__menu__link{
+    color:var(--cor-texto);
+    text-decoration: none;
+    padding: 3px;
+    
+}
+.cabecalho__menu__link:hover{
+    text-decoration: underline;
+    font-family: var(--fonte-texto);
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px chocolate;
+}
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+.principal{
+    background-image: url("../_img/torta1.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items:baseline;
+    background-position:right;
+    text-align:left;
+
+}
+.container__caixa{
+    margin-left: 4em;
+    
+}
+.container__imagem{
+    margin: 2em 0 2em 6em;
+    width:30%;
+    text-align: center;
+    border-radius: 100px;
+
+}
+
+.container__texto{
+    margin-bottom: 1em;
+    text-align: justify;
+    margin-right: 10em;
+}
+
+.secundario{
+    
+    text-align:center;
+    margin:0 6em;
+        
+}
+
+.container__titulo{
+    font-family: var(--fonte-texto);
+    color:var(--cor-texto);
+    font-size: 32px;
+    text-align: center;
+    padding: 4em;
+}
+.secundario__imagem{
+    width: 80%;
+    border: 2px solid #d4af37;
+    border-radius: 4px;
+    padding: 5px;
+
+}
+.secundario__video{
+    border: 2px solid #d4af37;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.container__descricao{
+    padding: 2em;
+    margin: 5em 0 0 0;
+    
+}
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 0.3em;
+}
+.rodape{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:10px;
+    padding:12px;
+    align-items: baseline;
+    background-color: var(--cor-fundo-rodape);
+   
+}
+.rodape__texto{
+    font-family: var(--fonte-texto);
+    color: var(--cor-texto-rodape);
+    font-size: 12px;
+}
+.rodape__link{
+    font-family: var(--fonte-texto);
+    color: var(--cor-texto-rodape);
+    border: 2px solid #643843;
+    border-radius: 12px;
+    padding: 3px 10px;
+    text-decoration:none;
+}
+.rodape__link:hover{
+    text-decoration: underline;
+    font-family: var(--fonte-texto);
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px chocolate;
+}
